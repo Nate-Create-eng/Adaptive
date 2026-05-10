@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive</title>
+  <link rel="stylesheet" href="./styles/adaptive.css">
+  <link rel="stylesheet" href="./styles/clear-styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="pxrem">
+      <div class="pxrem__upper">
+        <span class="pxrem__size-span">Size: </span><input type="number" class="pxrem__input">
+        <input type="number" placeholder="px" class="pxrem__upper-custom-px">
+        <input type="number" placeholder="rem" class="pxrem__upper-custom-rem">
+      </div>
+      <table class="pxrem__table">
+      </table>
+    </div>
+
+    <div class="adapt">
+      <div class="adapt__grid">
+        <span>Screen </span>
+        <input type="number" placeholder="max" 
+        class="adapt__screen-max">
+        <input type="number" placeholder="min" 
+        class="adapt__screen-min">
+        <button class="adapt__px-to-rem-btn" tabindex="-1">rem</button>
+        <input type="number" placeholder="max" class="adapt__max">
+        <input type="number" placeholder="min" class="adapt__min">
+      </div>
+      <p class="adapt__result"></p>
+      <p>
+        Breakpoints<br>
+        1920<br>
+        1280<br>
+        768<br>
+        360
+      </p>
+    </div>
+
+  </div>
+
+  <script src="./scripts/adaptive.js"></script>
+</body>
+
+</html>
